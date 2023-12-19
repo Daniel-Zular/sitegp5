@@ -1,0 +1,158 @@
+/* Estilização para nav-item */
+.nav-item {
+    display: flex; /* Usa flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-top: 1.6rem; /* Margem superior */
+    margin-bottom: 0.25rem; /* Margem inferior */
+    text-transform: uppercase; /* Transforma o texto para maiúsculas */
+}
+
+/* Estilização para nav-link */
+.nav-item .nav-link {
+    color: var(--bs-body-color); /* Cor do link (pode definir uma variável CSS ou uma cor específica) */
+    text-decoration: none; /* Remove a linha de sublinhado */
+    margin-bottom: 0; /* Sem margem inferior */
+}
+
+/* Estilo para hover */
+.nav-item .nav-link:hover {
+    text-decoration: none; /* Mantém sem linha de sublinhado ao passar o mouse */
+}
+
+/* Diminuir a barra preta no topo */
+.navbar-brand {
+    padding-top: 0.5rem; /* Reduzir o preenchimento superior */
+    padding-bottom: 0.5rem; /* Reduzir o preenchimento inferior */
+    /* Outros estilos permanecem os mesmos */
+  }
+  
+  /* Exemplo de uso de porcentagem e vw/vh */
+  #erro, #sucesso {
+    top: 5vh; /* Uso de vh para a altura */
+    right: 2vw; /* Uso de vw para a largura */
+    width: 20vw; /* Uso de vw para a largura - já está em porcentagem */
+    /* Outros estilos permanecem os mesmos */
+  }
+  
+  #progress {
+    height: 2vh; /* Uso de vh para a altura, tornando-a responsiva */
+    /* Outros estilos permanecem os mesmos */
+  }
+  
+  /* Se necessário, ajustar outras propriedades para usar %, vw ou vh */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    text-align: center;
+}
+
+.vertical-center {
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(100vh - 56px); /* Adjusted height if there's a fixed navbar (56px is the typical height of a navbar) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  text-align: center; /* Center the buttons text */
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que o container ocupe toda a largura */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centraliza os itens da linha */
+    width: 100%; /* Garante que a linha ocupe toda a largura do container */
+}
+
+.col-auto {
+    flex: 0 0 auto; /* Mantém os botões alinhados corretamente */
+}
+#resultadosViagem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+#resultadosEntrega {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os cards */
+}
+.card {
+  flex: 0 0 18rem; /* Largura dos cards e evitar que eles cresçam */
+}
+
+#sidebarMenu {
+  height: 100vh;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-conteudo {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.botao-fechar {
+  float: right;
+  cursor: pointer;
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
